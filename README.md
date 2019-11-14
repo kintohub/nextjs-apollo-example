@@ -1,75 +1,50 @@
-# KintoHub {name}-example
+# KintoHub NextJs with Apollo example
 
 ## Overview
-TODO: Cool description / goal of what technology you are bringing onto the plate with what language. This should be sweet and concise.
+[Next.js](https://github.com/zeit/next.js/) is a framework that most notably allows you to write server-rendered React apps easily – amongst other cool things.
+This particular example rolls around using nextjs with [React](https://reactjs.org/) and [Apollo graphql](https://www.apollographql.com/)
 
-[Live Example](live/example/on/kintohub)
+[Live Example](https://next-apollo-example-1d0d2-8caf9.web.master.kintohub.com/)
 
 __About KintoHub:__
 
 KintoHub aligns teams to ship & operate cloud native apps with ease. [Learn More](https://www.kintohub.com)
-## [Optional] Requirements
-
-- Ensure you have an account on [KintoHub](www.kintohub.com/sign-up)
-- [Optional] Required Kintohub features: [list features] (like pro sub features)
-- [Optional] specific packages needed for project to run
 
 ## Deployment
-1. Apply this template to your [Github](https://github.com/kintohub/example-template/generate)
-2. Create a [KintoBlockType](www.link.to.create.kintoblock.type.here) and include:
+1. Apply this template to your [Github](https://github.com/kintohub/preact-example/generate)
+2. Connect your GithubApp to KintoHub.
+3. Create a [Website Block](https://docs.kintohub.com/docs/kintoblocks/websites) on KintoHub and select the Repository you just generated on your account.
+4. Select **Dynamic Web App**
+4. Set the **name** of your kinto block
+5. Choose `Node.js` as the **language** and `13.1-alpine` as the **version**
+6. Set the **Build Command** as `npm install && npm run build`
+7. Set the **Port** as `3000`
 
-You're now good to build! Click `Build Latest Commit`. Once complete, Click  Now click `Add To Project`.
+You're now good to go! Click **Create Website** and then on your Master branch click `Build Latest Commit`.
 
-3. Create Project and include:
-
-
-You're ready to go live Click `Deploy`
-
-## Build & Deployment Configurations
-Use the following examples for build or deployment environment variables:
-
-* [.build-example](/.build-example)
-* [.env-dev](/.env-dev)
-* [.env-prod](/.env-dev)
+Once complete, Click  Now click `Add To Project`.
+And now you're ready to go live Click `Deploy` and once done -> you can view your website by clicking `Open`
 
 ## Installation & Local Run
 
-1. npm install?
-2. npm run prod?
-
-## Test
-
-1. npm test
-
-
-## Usage
-The following works with our [Live Example](live/example/endpoint):
-
-**API Call**
+``` bash
+# Installs dependencies
+npm install
+# builds a production server. run it before running npm start
+npm run build
+# Runs production server
+npm start
+# Run a development server
+npm run dev
 ```
-GET http://localhost:8080/hello
-```
+[Apollo](https://www.apollographql.com/client/) is a GraphQL client that allows you to easily query the exact data you need from a GraphQL server. In addition to fetching and mutating data, Apollo analyzes your queries and their results to construct a client-side cache of your data, which is kept up to date as further queries and mutations are run, fetching more results from the server.
 
-**Response**
-```
-{
-"hello": "world"
-}
-```
+This example relies on [graph.cool](https://www.graph.cool) for its GraphQL backend.
 
-## TODO: (Deleteme) Checklist
+## What's Next?
 
-- Create dev / prod example
-- Write clear instructions on how to add it to kintohub
-- (optional) write further instruction on how to fine tune it for production 
-- Create tags for the example repository (kintohub, examples, related technologies)
-- Create new example on [kinto-docs](docs.kintohub.com) (add to sidebar + create new page)
-- Double check call URLs and ensure they are appropriate to your username
+You can do a lot with KintoHub and your deployed application. Some helpful links for next steps that you may consider with this project.
 
-__Common Snippets:__
+* [Creating multiple environments](https://docs.kintohub.com/docs/projects/environments)
 
-Below are common urls/instructions that could be copy/pasted in some examples. (KintoBlock links, instructions for HA on KintoHub, etc)
-
-Please create PR for future snippets.
-
-
+Happy coding!
